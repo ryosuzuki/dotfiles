@@ -1,0 +1,16 @@
+[user]
+	name = Ryo Suzuki
+	email = ryooopan@googlemail.com
+
+[alias]
+	st = status
+	ad = add . --all
+	cm = commit -am
+	co = checkout
+	mg = merge
+	df = diff --color
+	lg = log --color
+[core]
+	editor = emacs
+[push]
+	default = matching
