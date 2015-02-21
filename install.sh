@@ -9,6 +9,8 @@ if [ ! -d ~/.files ]; then
   ln -sf .gitconfig ~/.gitconfig
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
   ln -sf ~/.files/sublime User
+  cd ~/Library/Application\ Support/Karabiner
+  ln -sf ~/.files/karabiner/private.xml .
 else
   echo ".files is already installed"
 fi
