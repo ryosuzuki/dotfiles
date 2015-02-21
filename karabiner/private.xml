@@ -40,6 +40,11 @@
         </autogen>
         <autogen>
             __KeyToKey__
+            KeyCode::COMMAND_R, ModifierFlag::CONTROL_L,
+            KeyCode::OPTION_R, ModifierFlag::CONTROL_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
             KeyCode::F, ModifierFlag::COMMAND_R,
             KeyCode::F, ModifierFlag::OPTION_R
         </autogen>
@@ -72,6 +77,11 @@
             __KeyToKey__
             KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_R,
             KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SEMICOLON, ModifierFlag::COMMAND_R,
+            KeyCode::SEMICOLON, ModifierFlag::OPTION_R
         </autogen>
     </item>
     <item>
