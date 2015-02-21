@@ -1,0 +1,39 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Abacus",
+		"All Autocomplete",
+		"AutoCompleteJS",
+		"AutoFileName",
+		"Bootstrap 3 Snippets",
+		"BracketHighlighter",
+		"DocBlockr",
+		"Dotfiles Syntax Highlighting",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Jade",
+		"JavaScript & NodeJS Snippets",
+		"JavaScript Completions",
+		"jQuery",
+		"JsFormat",
+		"Keymaps",
+		"LiveReload",
+		"MacTerminal",
+		"MarkdownEditing",
+		"Move By Paragraph",
+		"Origami",
+		"Package Control",
+		"PackageResourceViewer",
+		"Random Everything",
+		"sublemacspro",
+		"Sublime Files",
+		"SublimeLinter",
+		"SyncedSideBar",
+		"Terminal",
+		"zenburn"
+	]
+}

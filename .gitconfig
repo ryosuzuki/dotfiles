@@ -14,3 +14,6 @@
 	editor = emacs
 [push]
 	default = matching
+[github]
+	user = 
+	password = 
