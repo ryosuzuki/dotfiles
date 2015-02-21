@@ -70,6 +70,19 @@
         </autogen>
         <autogen>
             __KeyToKey__
+            KeyCode::SEMICOLON, ModifierFlag::COMMAND_R,
+            KeyCode::SEMICOLON, ModifierFlag::OPTION_R
+        </autogen>
+    </item>
+    <item>
+        <name>Custom Sublime Text Settings</name>
+        <identifier>private.sublime_settings</identifier>
+        <appendix>
+            (Command_R [ ] to Option_R [ ])
+        </appendix>
+        <only>TERMINAL, EMACS, SUBLIMETEXT</only>
+        <autogen>
+            __KeyToKey__
             KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_R,
             KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R
         </autogen>
@@ -77,11 +90,6 @@
             __KeyToKey__
             KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_R,
             KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::SEMICOLON, ModifierFlag::COMMAND_R,
-            KeyCode::SEMICOLON, ModifierFlag::OPTION_R
         </autogen>
     </item>
     <item>
