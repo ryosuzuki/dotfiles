@@ -5,37 +5,35 @@
 
   { "keys": ["ctrl+pagedown"], "command": "next_view_in_stack" },
   { "keys": ["ctrl+pageup"], "command": "prev_view_in_stack" },
-	{ "keys": ["ctrl+x","ctrl+k"], "command": "close" },
-	{ "keys": ["ctrl+x","ctrl+c"], "command": "close" },
-	{ "keys": ["ctrl+x","ctrl+s"], "command": "save" },
-	{ "keys": ["ctrl+x","l"], "command": "focus_side_bar" },		
+  { "keys": ["ctrl+x","ctrl+k"], "command": "close" },
+  { "keys": ["ctrl+x","ctrl+c"], "command": "close" },
+  { "keys": ["ctrl+x","ctrl+s"], "command": "save" },
+  { "keys": ["ctrl+x","l"], "command": "focus_side_bar" },
 
   {"keys": ["alt+["], "command": "move_by_paragraph", "args": {"forward": false}},
   {"keys": ["alt+]"], "command": "move_by_paragraph", "args": {"forward": true}},
-	{"keys": ["alt+shift+["], "command": "move_by_paragraph", "args": {"forward": false, "extend": true}},
-	{"keys": ["alt+shift+]"], "command": "move_by_paragraph", "args": {"forward": true, "extend": true}},
+  {"keys": ["alt+shift+["], "command": "move_by_paragraph", "args": {"forward": false, "extend": true}},
+  {"keys": ["alt+shift+]"], "command": "move_by_paragraph", "args": {"forward": true, "extend": true}},
 
-	// Indentation
-	{ "keys": ["tab"], "command": "insert_best_completion", "args": {"default": "\t", "exact": true} },
-	{ "keys": ["tab"], "command": "insert_best_completion", "args": {"default": "\t", "exact": false},
-		"context": [ { "key": "setting.tab_completion", "operator": "equal", "operand": true } ]
-	},
-	{ "keys": ["shift+tab"], "command": "unindent" },
-	{ "keys": ["ctrl+i"], "command": "insert_best_completion", "args": {"default": "\t", "exact": true} },
-	{ "keys": ["ctrl+i"], "command": "insert_best_completion", "args": {"default": "\t", "exact": false}, 
-		"context": [ { "key": "setting.tab_completion", "operator": "equal", "operand": true } ]
-	},
+  // Indentation
+  { "keys": ["tab"], "command": "indent" },
+  { "keys": ["shift+tab"], "command": "unindent" },
 
-	{ "keys": ["ctrl+s"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
-	{ "keys": ["ctrl+s"], "command": "find_next", "context":
-		[{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
-	},
-	{ "keys": ["shift+enter"], "command": "find_prev", "context":
-		[{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
-	},
-	{ "keys": ["ctrl+q"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["ctrl+i"], "command": "insert_best_completion", "args": {"default": "\t", "exact": true} },
+  { "keys": ["ctrl+i"], "command": "insert_best_completion", "args": {"default": "\t", "exact": false},
+    "context": [ { "key": "setting.tab_completion", "operator": "equal", "operand": true } ]
+  },
 
-	
+  { "keys": ["ctrl+s"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+  { "keys": ["ctrl+s"], "command": "find_next", "context":
+    [{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
+  },
+  { "keys": ["shift+enter"], "command": "find_prev", "context":
+    [{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
+  },
+  { "keys": ["ctrl+q"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+
 
 ]
 
