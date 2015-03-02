@@ -35,3 +35,16 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
 
 . `brew --prefix`/etc/profile.d/z.sh
+
+
+export PATH="$HOME/Documents/c++/depot_tools:$PATH"
+export CXX="`which clang++`"
+export CC="`which clang`"
+export CPP="`which clang` -E"
+export LINK="`which clang++`"
+export CXX_host="`which clang++`"
+export CC_host="`which clang`"
+export CPP_host="`which clang` -E"
+export LINK_host="`which clang++`"
+export GYP_DEFINES="clang=1"
+

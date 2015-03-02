@@ -46,22 +46,27 @@
         <autogen>
             __KeyToKey__
             KeyCode::F, ModifierFlag::COMMAND_R,
-            KeyCode::F, ModifierFlag::OPTION_R
+            KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_R
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::B, ModifierFlag::COMMAND_R,
-            KeyCode::B, ModifierFlag::OPTION_R
+            KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_R
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::V, ModifierFlag::COMMAND_R,
-            KeyCode::V, ModifierFlag::OPTION_R
+            KeyCode::PAGEUP, ModifierFlag::OPTION_R
         </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::D, ModifierFlag::COMMAND_R,
-            KeyCode::D, ModifierFlag::OPTION_R
+            KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::COMMAND_R,
+            KeyCode::DELETE, ModifierFlag::OPTION_R
         </autogen>
         <autogen>
             __KeyToKey__
