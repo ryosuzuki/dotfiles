@@ -5,11 +5,11 @@
 	"font_size": 16.0,
 	"ignored_packages":
 	[
-		"Markdown",
+		"SublimeServer",
 		"Processing",
-		"Vintage",
+		"Markdown",
 		"Markdown Preview",
-		"SublimeServer"
+		"Vintage"
 	],
 	"smart_indent": true,
 	"tab_size": 2,

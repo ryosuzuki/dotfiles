@@ -120,7 +120,8 @@
         <only>TERMINAL, EMACS, SUBLIMETEXT</only>
         <autogen>
             __DoublePressModifier__
-            KeyCode::COMMAND_R, KeyCode::COMMAND_R,
+            KeyCode::COMMAND_R,
+            KeyCode::OPTION_R,
             KeyCode::VK_JIS_TOGGLE_EISUU_KANA
         </autogen>
     </item>

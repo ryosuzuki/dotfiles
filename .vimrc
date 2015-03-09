@@ -39,9 +39,10 @@ inoremap <C-l> <ESC>zz
 inoremap <C-k> <ESC>d$a
 inoremap <C-y> <ESC>p$a
 inoremap <C-/> <ESC>ua
-inoremap <C-x><C-s> <ESC>:w<CR>
+inoremap <C-s> <esc>:w<cr>a
 nnoremap <C-o> <S-o><ESC>
-map <c-x><c-s> :w<cr>
+nnoremap <C-x><C-c> :q<cr>
+map <C-x><C-s> :w<cr>
 
 
 

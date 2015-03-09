@@ -11,12 +11,14 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.nodebrew/current/lib/node_modules:$PATH
 
 alias emacs="$(brew --prefix emacs)/bin/emacs"
+alias em="$(brew --prefix emacs)/bin/emacs"
 alias sub="/usr/local/bin/subl"
 alias ipython="ipython"
 alias unicorn="unicorn_rails -c config/unicorn.rb -p 3000 -E"
 alias tr="tree -L 2"
 alias br="cd ~/Library/Application\ Support/Brackets/extensions/user"
 alias j="z"
+alias tinder="cd $HOME/Documents/node/node-tinder;node debug.js"
 
 export PATH="/usr/local/heroku/bin:$PATH"
 
