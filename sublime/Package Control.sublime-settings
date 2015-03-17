@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"Abacus",
+		"AlignTab",
 		"All Autocomplete",
 		"AutoCompleteJS",
 		"AutoFileName",
@@ -15,6 +16,7 @@
 		"Emmet",
 		"Git",
 		"GitGutter",
+		"Github Color Theme",
 		"Jade",
 		"JavaScript & NodeJS Snippets",
 		"JavaScript Completions",
@@ -25,6 +27,7 @@
 		"LiveReload",
 		"MacTerminal",
 		"Move By Paragraph",
+		"Numix Theme",
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
@@ -34,6 +37,9 @@
 		"SublimeLinter",
 		"SyncedSideBar",
 		"Terminal",
+		"Theme - Asphalt",
+		"Theme - Coffee",
+		"Theme - Glacier",
 		"zenburn"
 	]
 }
