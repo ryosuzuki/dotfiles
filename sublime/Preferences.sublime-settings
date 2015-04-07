@@ -6,10 +6,10 @@
 	"ignored_packages":
 	[
 		"Markdown",
+		"Markdown Preview",
 		"SublimeServer",
-		"Vintage",
 		"Processing",
-		"Markdown Preview"
+		"Vintage"
 	],
 	"smart_indent": true,
 	"tab_size": 2,
