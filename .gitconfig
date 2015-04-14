@@ -11,7 +11,7 @@
 	df = diff --color
 	lg = log --color
 [core]
-	editor = emacs
+	editor = vi
 [push]
 	default = matching
 [github]

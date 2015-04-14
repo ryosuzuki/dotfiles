@@ -20,6 +20,8 @@ alias br="cd ~/Library/Application\ Support/Brackets/extensions/user"
 alias j="z"
 alias tinder="cd $HOME/Documents/node/node-tinder;node debug.js"
 alias nm="nodemon --harmony"
+alias ga="git add ."
+alias gs="git status"
 
 export PATH="/usr/local/heroku/bin:$PATH"
 
