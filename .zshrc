@@ -9,11 +9,12 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.nodebrew/current/lib/node_modules:$PATH
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 alias emacs="$(brew --prefix emacs)/bin/emacs"
 alias em="$(brew --prefix emacs)/bin/emacs"
+alias ipython="$HOME/.pyenv/versions/2.7.8/bin/ipython"
 alias sub="/usr/local/bin/subl"
-alias ipython="ipython"
 alias unicorn="unicorn_rails -c config/unicorn.rb -p 3000 -E"
 alias tr="tree -L 2"
 alias br="cd ~/Library/Application\ Support/Brackets/extensions/user"
@@ -23,7 +24,7 @@ alias nm="nodemon --harmony"
 alias ga="git add ."
 alias gs="git status"
 
-export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"
 
 # alias julius="julius -C `brew --prefix julius-dictation-kit`/share/fast.jconf -charconv EUC-JP UTF-8"
 

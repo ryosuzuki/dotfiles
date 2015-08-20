@@ -11,9 +11,10 @@
 	df = diff --color
 	lg = log --color
 [core]
-	editor = vi
 [push]
 	default = matching
 [github]
 	user = 
 	password = 
+[core]
+	editor = /usr/bin/vim
