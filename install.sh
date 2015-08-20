@@ -2,7 +2,7 @@
 
 if [ ! -d ~/.files ]; then
   echo "Installation starts..."
-  git clone https://github.com/ryooopan/dotfiles.git ~/.files
+  git clone git@github.com:ryosuzuki/dotfiles.git ~/.files
   cd ~/.files
   ln -sf .vimrc ~/.vimrc
   ln -sf .zshrc ~/.zshrc 
