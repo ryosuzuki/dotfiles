@@ -3,14 +3,11 @@
 if [ ! -d ~/.files ]; then
   echo "Installation starts..."
   git clone git@github.com:ryosuzuki/dotfiles.git ~/.files
-  cd ~/.files
-  ln -sf .vimrc ~/.vimrc
-  ln -sf .zshrc ~/.zshrc 
-  ln -sf .gitconfig ~/.gitconfig
-  cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-  ln -sf ~/.files/sublime User
-  cd ~/Library/Application\ Support/Karabiner
-  ln -sf ~/.files/karabiner/private.xml .
+  ln -sf ~/.files/.vimrc ~/.vimrc
+  ln -sf ~/.files/.zshrc ~/.zshrc 
+  ln -sf ~/.files/.gitconfig ~/.gitconfig
+  ln -sf ~/.files/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/  
+  ln -sf ~/.files/karabiner/private.xml ~/Library/Application\ Support/Karabiner/private.xml
 else
   echo ".files is already installed"
 fi
