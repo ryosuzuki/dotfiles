@@ -5,19 +5,12 @@ if has('vim_starting')
   if &compatible
     set nocompatible
   endif
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-if has('vim_starting')
   if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
     echo "install neobundle..."
     :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
   endif
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
-
-call neobundle#rc(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
 
 set termencoding=utf-8
 set encoding=utf-8
@@ -76,7 +69,9 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'itchyny/lightline.vim'
 
+
 call neobundle#end()
+NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundleCheck
 
 
