@@ -1,11 +1,15 @@
 if !1 | finish | endif
-filetype off     
+filetype off
 
 if has('vim_starting')
   if &compatible
-    set nocompatible  
+    set nocompatible
   endif
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
+    echo "install neobundle..."
+    :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
+  endif
+  set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
 
 set termencoding=utf-8
@@ -22,9 +26,9 @@ set laststatus=2
 set t_Co=256
 set clipboard+=unnamed
 
-filetype indent on 
+filetype indent on
 filetype plugin on
-filetype plugin indent on 
+filetype plugin indent on
 
 inoremap <silent> jj <ESC>
 inoremap <C-p> <Up>
@@ -57,7 +61,7 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'tpope/vim-endwise' 
+NeoBundle 'tpope/vim-endwise'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'powerline/fonts'
 NeoBundle 'plasticboy/vim-markdown'
@@ -65,7 +69,9 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'itchyny/lightline.vim'
 
+
 call neobundle#end()
+NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundleCheck
 
 
@@ -103,8 +109,8 @@ endfunction
 
 function! MyFilename()
   return ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
-        \ (&ft == 'vimfiler' ? vimfiler#get_status_string() : 
-        \  &ft == 'unite' ? unite#get_status_string() : 
+        \ (&ft == 'vimfiler' ? vimfiler#get_status_string() :
+        \  &ft == 'unite' ? unite#get_status_string() :
         \  &ft == 'vimshell' ? vimshell#get_status_string() :
         \ '' != expand('%:t') ? expand('%:t') : '[No Name]') .
         \ ('' != MyModified() ? ' ' . MyModified() : '')
@@ -133,3 +139,13 @@ endfunction
 function! MyMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
+
+
+if(!empty(neobundle#get_not_installed_bundle_names()))
+  echomsg 'Not installed bundles: '
+    \ string(neobundle#get_not_installed_bundle_names())
+  if confirm('Install bundles now?', "yes\nNo", 2) == 1
+    NeoBundleInstall
+    source ~/.vimrc
+  endif
+end
