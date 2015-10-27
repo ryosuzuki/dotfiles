@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Custom Terminal Setting</name>
+        <identifier>private.terminal_settings</identifier>
+        <only>TERMINAL</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::ESCAPE,
+            KeyCode::ESCAPE, KeyCode::JIS_EISUU
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_LEFT, VK_CONTROL,
+            KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU
+        </autogen>
+        <!--
+        <autogen>
+            __KeyToKey__
+            KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+            KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::TAB, ModifierFlag::CONTROL_L,
+            KeyCode::T, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+        -->
+    </item>
+    <item>
+        <name>Limited Command_R to Option_R</name>
+        <identifier>private.command_to_option_settings</identifier>
+        <appendix>
+            (Command_R to Option_R only F, B, V, H, etc)
+        </appendix>
+        <autogen>
+            __KeyToKey__
+            KeyCode::CONTROL_L, ModifierFlag::COMMAND_R,
+            KeyCode::CONTROL_L, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::COMMAND_R, ModifierFlag::CONTROL_L,
+            KeyCode::OPTION_R, ModifierFlag::CONTROL_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F, ModifierFlag::COMMAND_R,
+            KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::B, ModifierFlag::COMMAND_R,
+            KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::V, ModifierFlag::COMMAND_R,
+            KeyCode::PAGEUP, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::D, ModifierFlag::COMMAND_R,
+            KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::COMMAND_R,
+            KeyCode::DELETE, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::G, ModifierFlag::COMMAND_R,
+            KeyCode::G, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SEMICOLON, ModifierFlag::COMMAND_R,
+            KeyCode::SEMICOLON, ModifierFlag::OPTION_R
+        </autogen>
+    </item>
+    <item>
+        <name>Custom Sublime Text Settings</name>
+        <identifier>private.sublime_settings</identifier>
+        <appendix>
+            (Command_R [ ] to Option_R [ ])
+        </appendix>
+        <only>TERMINAL, EMACS, SUBLIMETEXT</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_R,
+            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_R,
+            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R
+        </autogen>
+    </item>
+    <item>
+        <name>Custom KANA Settings</name>
+        <identifier>private.japanese_settings</identifier>
+        <appendix>
+            (Command_R only to EISUU/KANA toggle except for Terminal)
+        </appendix>
+        <not>TERMINAL, EMACS, SUBLIMETEXT</not>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::COMMAND_R,
+            KeyCode::COMMAND_R,
+            KeyCode::JIS_KANA <!-- JIS_KANA -->
+        </autogen>
+    </item>
+    <item>
+        <name>Custom KANA Settings in Terminal</name>
+        <identifier>private.japanese_settings_in_terminal</identifier>
+        <appendix>
+            (Command_R x2 to KANA only in Terminal)
+        </appendix>
+        <only>TERMINAL, EMACS, SUBLIMETEXT</only>
+        <autogen>
+            __DoublePressModifier__
+            KeyCode::COMMAND_R,
+            KeyCode::OPTION_R,
+            KeyCode::VK_JIS_TOGGLE_EISUU_KANA
+        </autogen>
+    </item>
+    <item>
+        <name>Open in Finder</name>
+        <identifier>private.open_finder_alt</identifier>
+        <only>FINDER</only>
+        <appendix>
+            (Control + M to Open in Finder)
+        </appendix>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::O, ModifierFlag::COMMAND_L, Option::NOREPEAT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::O, ModifierFlag::COMMAND_L, Option::NOREPEAT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
+        <name>Preview</name>
+        <identifier>private.preview</identifier>
+        <only>PREVIEW</only>
+        <appendix>
+            (J, K to Next in Preview)
+        </appendix>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J,
+            KeyCode::CURSOR_DOWN
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K,
+            KeyCode::CURSOR_UP
+        </autogen>
+    </item>
+    <item>
+        <name>Custom Emacs Terminal Settings</name>
+        <appendix>
+            (Change Command_L to Option_L except for N, T, W, Q, etc)
+        </appendix>
+        <identifier>private.emacs_terminal_settings</identifier>
+        <only>TERMINAL, EMACS</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::A, ModifierFlag::COMMAND_L,
+            KeyCode::A, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::B, ModifierFlag::COMMAND_L,
+            KeyCode::B, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::C, ModifierFlag::COMMAND_L,
+            KeyCode::C, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::D, ModifierFlag::COMMAND_L,
+            KeyCode::D, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::E, ModifierFlag::COMMAND_L,
+            KeyCode::E, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F, ModifierFlag::COMMAND_L,
+            KeyCode::F, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::G, ModifierFlag::COMMAND_L,
+            KeyCode::G, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::COMMAND_L,
+            KeyCode::H, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::I, ModifierFlag::COMMAND_L,
+            KeyCode::I, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J, ModifierFlag::COMMAND_L,
+            KeyCode::J, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K, ModifierFlag::COMMAND_L,
+            KeyCode::K, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::L, ModifierFlag::COMMAND_L,
+            KeyCode::L, ModifierFlag::OPTION_L
+        </autogen>
+        <!--
+         <autogen>
+         __KeyToKey__
+         KeyCode::M, ModifierFlag::COMMAND_L,
+         KeyCode::M, ModifierFlag::OPTION_L
+         </autogen>
+         -->
+         <!--
+         <autogen>
+             __KeyToKey__
+             KeyCode::N, ModifierFlag::COMMAND_L,
+             KeyCode::N, ModifierFlag::OPTION_L
+         </autogen>
+         -->
+         <autogen>
+             __KeyToKey__
+             KeyCode::O, ModifierFlag::COMMAND_L,
+             KeyCode::O, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::P, ModifierFlag::COMMAND_L,
+            KeyCode::P, ModifierFlag::OPTION_L
+        </autogen>
+        <!--
+         <autogen>
+         __KeyToKey__
+         KeyCode::Q, ModifierFlag::COMMAND_L,
+         KeyCode::Q, ModifierFlag::OPTION_L
+         </autogen>
+         -->
+        <autogen>
+            __KeyToKey__
+            KeyCode::R, ModifierFlag::COMMAND_L,
+            KeyCode::R, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::S, ModifierFlag::COMMAND_L,
+            KeyCode::S, ModifierFlag::OPTION_L
+        </autogen>
+        <!--
+         <autogen>
+         __KeyToKey__
+         KeyCode::T, ModifierFlag::COMMAND_L,
+         KeyCode::T, ModifierFlag::OPTION_L
+         </autogen>
+         -->
+         <autogen>
+             __KeyToKey__
+             KeyCode::T, ModifierFlag::COMMAND_R,
+             KeyCode::T, ModifierFlag::COMMAND_R
+         </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::U, ModifierFlag::COMMAND_L,
+            KeyCode::U, ModifierFlag::OPTION_L
+        </autogen>
+        <!--
+         <autogen>
+         __KeyToKey__
+         KeyCode::W, ModifierFlag::COMMAND_L,
+         KeyCode::W, ModifierFlag::OPTION_L
+         </autogen>
+         -->
+        <autogen>
+            __KeyToKey__
+            KeyCode::X, ModifierFlag::COMMAND_L,
+            KeyCode::X, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::Y, ModifierFlag::COMMAND_L,
+            KeyCode::Y, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::Z, ModifierFlag::COMMAND_L,
+            KeyCode::Z, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L,
+            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L,
+            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L
+        </autogen>
+    </item>
+    <!--
+    <item>
+        <name>Custom Chrome Settings</name>
+        <identifier>private.chrome_settings</identifier>
+        <appendix>
+            (Command_R - = to zoom in and out)
+        </appendix>
+        <only>GOOGLE_CHROME, FIREFOX</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::EQUAL, ModifierFlag::OPTION_R,
+            KeyCode::EQUAL, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::MINUS, ModifierFlag::OPTION_R,
+            KeyCode::MINUS, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::R, ModifierFlag::OPTION_R,
+            KeyCode::R, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::T, ModifierFlag::OPTION_R,
+            KeyCode::T, ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    -->
+</root>
