@@ -126,6 +126,52 @@
         </autogen>
     </item>
     <item>
+        <name>Open in Finder</name>
+        <identifier>private.open_finder</identifier>
+        <only>FINDER</only>
+        <appendix>
+            (Control + J to Open in Finder)
+        </appendix>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::O, ModifierFlag::COMMAND_L, Option::NOREPEAT
+        </autogen>
+    </item>
+    <item>
+        <name>Open in Finder</name>
+        <identifier>private.open_finder_alt</identifier>
+        <only>FINDER</only>
+        <appendix>
+            (Control + M to Open in Finder)
+        </appendix>
+        <autogen>
+            __KeyToKey__
+            KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::O, ModifierFlag::COMMAND_L, Option::NOREPEAT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::O, ModifierFlag::COMMAND_L, Option::NOREPEAT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
         <name>Custom Emacs Terminal Settings</name>
         <appendix>
             (Change Command_L to Option_L except for N, T, W, Q, etc)
@@ -284,18 +330,6 @@
         </autogen>
     </item>
     <!--
-    <item>
-        <name>Application Switch Settings</name>
-        <identifier>private.switch_settings</identifier>
-        <appendix>
-            (Command_R + Tab)
-        </appendix>
-        <autogen>
-            __KeyToKey__
-            KeyCode::TAB, ModifierFlag::OPTION_R,
-            KeyCode::TAB, ModifierFlag::COMMAND_L
-        </autogen>
-    </item>
     <item>
         <name>Custom Chrome Settings</name>
         <identifier>private.chrome_settings</identifier>
