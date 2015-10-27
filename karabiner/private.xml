@@ -127,19 +127,6 @@
     </item>
     <item>
         <name>Open in Finder</name>
-        <identifier>private.open_finder</identifier>
-        <only>FINDER</only>
-        <appendix>
-            (Control + J to Open in Finder)
-        </appendix>
-        <autogen>
-            __KeyToKey__
-            KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
-            KeyCode::O, ModifierFlag::COMMAND_L, Option::NOREPEAT
-        </autogen>
-    </item>
-    <item>
-        <name>Open in Finder</name>
         <identifier>private.open_finder_alt</identifier>
         <only>FINDER</only>
         <appendix>
@@ -147,7 +134,7 @@
         </appendix>
         <autogen>
             __KeyToKey__
-            KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+            KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
             KeyCode::O, ModifierFlag::COMMAND_L, Option::NOREPEAT
         </autogen>
         <autogen>
@@ -169,6 +156,24 @@
             __KeyToKey__
             KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
             KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    <item>
+        <name>Preview</name>
+        <identifier>private.preview</identifier>
+        <only>PREVIEW</only>
+        <appendix>
+            (J, K to Next in Preview)
+        </appendix>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J,
+            KeyCode::CURSOR_DOWN
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K,
+            KeyCode::CURSOR_UP
         </autogen>
     </item>
     <item>
