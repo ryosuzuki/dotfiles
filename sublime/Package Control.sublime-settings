@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -12,6 +13,7 @@
 		"Better CoffeeScript",
 		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
+		"CoffeeScriptHaml",
 		"DocBlockr",
 		"Dotfiles Syntax Highlighting",
 		"Emmet",
@@ -33,6 +35,7 @@
 		"Package Control",
 		"PackageResourceViewer",
 		"Pretty YAML",
+		"Python 3",
 		"Random Everything",
 		"Sass",
 		"SassBeautify",

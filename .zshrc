@@ -54,3 +54,7 @@ export CPP_host="`which clang` -E"
 export LINK_host="`which clang++`"
 export GYP_DEFINES="clang=1"
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+

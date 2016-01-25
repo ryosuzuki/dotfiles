@@ -6,11 +6,11 @@
 	"font_size": 16.0,
 	"ignored_packages":
 	[
-		"SublimeServer",
-		"Markdown Preview",
 		"Markdown",
-		"Vintage",
-		"Processing"
+		"Markdown Preview",
+		"Processing",
+		"SublimeServer",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
