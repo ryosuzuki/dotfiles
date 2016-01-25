@@ -163,17 +163,17 @@
         <identifier>private.preview</identifier>
         <only>PREVIEW</only>
         <appendix>
-            (J, K to Next in Preview)
+            (Command Up, Down to Fn Left Right)
         </appendix>
         <autogen>
             __KeyToKey__
-            KeyCode::J,
-            KeyCode::CURSOR_DOWN
+            KeyCode::CURSOR_UP, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+            KeyCode::CURSOR_LEFT, ModifierFlag::FN
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::K,
-            KeyCode::CURSOR_UP
+            KeyCode::CURSOR_DOWN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+            KeyCode::CURSOR_RIGHT, ModifierFlag::FN
         </autogen>
     </item>
     <item>

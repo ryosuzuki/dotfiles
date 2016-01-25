@@ -23,6 +23,7 @@ alias tinder="cd $HOME/Documents/node/node-tinder;node debug.js"
 alias nm="nodemon --harmony"
 alias ga="git add ."
 alias gs="git status"
+alias nm="nodemon --harmony"
 
 # export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -33,6 +34,7 @@ eval "$(rbenv init -)"
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 eval `keychain --quiet --eval --agents ssh id_rsa`
 
