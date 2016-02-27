@@ -20,10 +20,10 @@ alias tr="tree -L 2"
 alias br="cd ~/Library/Application\ Support/Brackets/extensions/user"
 alias j="z"
 alias tinder="cd $HOME/Documents/node/node-tinder;node debug.js"
-alias nm="nodemon --harmony"
+alias nd="nodemon --harmony"
 alias ga="git add ."
 alias gs="git status"
-alias nm="nodemon --harmony"
+alias nd="nodemon --harmony"
 
 # export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -43,6 +43,9 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://192.168.59.103:2376
 
 . `brew --prefix`/etc/profile.d/z.sh
+
+export C_INCLUDE_PATH="/usr/local/opt/armadillo/include"
+export CPLUS_INCLUDE_PATH="/usr/local/opt/armadillo/include"
 
 
 export PATH="$HOME/Documents/c++/depot_tools:$PATH"
