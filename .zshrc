@@ -56,6 +56,10 @@ export CPP_host="`which clang` -E"
 export LINK_host="`which clang++`"
 export GYP_DEFINES="clang=1"
 
+export C_INCLUDE_PATH="/usr/local/include/"
+export CPLUS_INCLUDE_PATH="/usr/local/include/"
+
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
