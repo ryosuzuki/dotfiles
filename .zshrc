@@ -24,6 +24,7 @@ alias nd="nodemon --harmony"
 alias ga="git add ."
 alias gs="git status"
 alias nd="nodemon --harmony"
+alias gyp="node-gyp rebuild"
 
 # export PATH="/usr/local/heroku/bin:$PATH"
 
