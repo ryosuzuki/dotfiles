@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <root>
+    <appdef>
+        <appname>ATOM</appname>
+        <equal>com.github.atom</equal>
+    </appdef>
+
     <item>
         <name>Custom Terminal Setting</name>
         <identifier>private.terminal_settings</identifier>
@@ -80,12 +85,12 @@
         </autogen>
     </item>
     <item>
-        <name>Custom Sublime Text Settings</name>
+        <name>Custom Atom and Sublime Text Settings</name>
         <identifier>private.sublime_settings</identifier>
         <appendix>
             (Command_R [ ] to Option_R [ ])
         </appendix>
-        <only>TERMINAL, EMACS, SUBLIMETEXT</only>
+        <only>TERMINAL, EMACS, SUBLIMETEXT, ATOM</only>
         <autogen>
             __KeyToKey__
             KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_R,
