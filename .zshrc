@@ -10,6 +10,8 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.nodebrew/current/lib/node_modules:$PATH
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+export PATH=$HOME/.emsdk/emscripten/1.34.1:$PATH
+
 
 alias emacs="$(brew --prefix emacs)/bin/emacs"
 alias em="$(brew --prefix emacs)/bin/emacs"
