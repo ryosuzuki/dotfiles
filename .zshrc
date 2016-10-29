@@ -27,6 +27,7 @@ alias ga="git add ."
 alias gs="git status"
 alias nd="nodemon --harmony"
 alias gyp="node-gyp rebuild"
+alias gfp="gp && git ftp push"
 
 # export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -70,3 +71,5 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
+source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
+source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'

@@ -6,7 +6,6 @@
 	"font_size": 16.0,
 	"ignored_packages":
 	[
-		"Makefile",
 		"Markdown",
 		"Markdown Preview",
 		"Processing",
