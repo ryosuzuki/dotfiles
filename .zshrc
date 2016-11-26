@@ -36,7 +36,9 @@ alias gfp="gp && git ftp push"
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
