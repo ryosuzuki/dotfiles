@@ -15,7 +15,7 @@ export PATH=$HOME/.emsdk/emscripten/1.34.1:$PATH
 
 alias emacs="$(brew --prefix emacs)/bin/emacs"
 alias em="$(brew --prefix emacs)/bin/emacs"
-alias ipython="$HOME/.pyenv/versions/2.7.8/bin/ipython"
+# alias ipython="$HOME/.pyenv/versions/2.7.8/bin/ipython"
 alias sub="/usr/local/bin/subl"
 alias unicorn="unicorn_rails -c config/unicorn.rb -p 3000 -E"
 alias tr="tree -L 2"
@@ -37,7 +37,8 @@ export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
-export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
+# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
+# export PYTHONPATH=$HOME/.pyenv/versions/3.5.2/lib/python3.5/site-packages/
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
