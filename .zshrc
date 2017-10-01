@@ -42,7 +42,7 @@ export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
 # export PYTHONPATH=$HOME/.pyenv/versions/3.5.2/lib/python3.5/site-packages/
 
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 eval `keychain --quiet --eval --agents ssh id_rsa`
 
@@ -75,5 +75,5 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
-source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
-source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'
+# source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
+# source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'
