@@ -18,13 +18,14 @@ alias em="$(brew --prefix emacs)/bin/emacs"
 # alias ipython="$HOME/.pyenv/versions/2.7.8/bin/ipython"
 alias sub="/usr/local/bin/subl"
 alias unicorn="unicorn_rails -c config/unicorn.rb -p 3000 -E"
-alias tr="tree -L 2"
+# alias tr="tree -L 2"
 alias br="cd ~/Library/Application\ Support/Brackets/extensions/user"
 alias j="z"
 alias tinder="cd $HOME/Documents/node/node-tinder;node debug.js"
 alias nd="nodemon --harmony"
 alias ga="git add ."
 alias gs="git status"
+alias gl="git pull origin master"
 alias nd="nodemon --harmony"
 alias gyp="node-gyp rebuild"
 alias gfp="gp && git ftp push"
@@ -41,7 +42,7 @@ export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
 # export PYTHONPATH=$HOME/.pyenv/versions/3.5.2/lib/python3.5/site-packages/
 
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 eval `keychain --quiet --eval --agents ssh id_rsa`
 
@@ -74,6 +75,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
-source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
-source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'
+# source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
+# source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'
 export PATH="/usr/local/opt/opencv@2/bin:$PATH"
