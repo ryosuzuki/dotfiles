@@ -76,3 +76,4 @@ export LANG=en_US.UTF-8
 
 source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
 source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'
+export PATH="/usr/local/opt/opencv@2/bin:$PATH"
