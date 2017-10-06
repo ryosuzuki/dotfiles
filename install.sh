@@ -6,7 +6,6 @@ if [ ! -d ~/.files ]; then
   ln -sf ~/.files/.vimrc ~/.vimrc
   ln -sf ~/.files/.zshrc ~/.zshrc
   ln -sf ~/.files/.gitconfig ~/.gitconfig
-  ln -sf ~/.files/karabiner/private.xml ~/Library/Application\ Support/Karabiner/private.xml
 else
   echo ".files is already installed"
 fi
