@@ -9,7 +9,6 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.nodebrew/current/lib/node_modules:$PATH
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 export PATH=$HOME/.emsdk/emscripten/1.34.1:$PATH
 
 
@@ -21,7 +20,6 @@ alias unicorn="unicorn_rails -c config/unicorn.rb -p 3000 -E"
 # alias tr="tree -L 2"
 alias br="cd ~/Library/Application\ Support/Brackets/extensions/user"
 alias j="z"
-alias tinder="cd $HOME/Documents/node/node-tinder;node debug.js"
 alias nd="nodemon --harmony"
 alias ga="git add ."
 alias gs="git status"
