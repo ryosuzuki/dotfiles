@@ -27,6 +27,7 @@ alias gl="git pull origin master"
 alias nd="nodemon --harmony"
 alias gyp="node-gyp rebuild"
 alias gfp="gp && git ftp push"
+alias ngrok="/usr/local/bin/ngrok"
 
 # export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -35,6 +36,10 @@ alias gfp="gp && git ftp push"
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
 export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
 # export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
 # export PYTHONPATH=$HOME/.pyenv/versions/3.5.2/lib/python3.5/site-packages/
@@ -76,3 +81,5 @@ export LANG=en_US.UTF-8
 # source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
 # source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'
 export PATH="/usr/local/opt/opencv@2/bin:$PATH"
+export PATH="/usr/local/opt/opencv@2/bin:$PATH"
+export PATH="/usr/local/opt/opencv@3/bin:$PATH"
