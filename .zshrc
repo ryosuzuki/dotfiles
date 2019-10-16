@@ -1,24 +1,15 @@
-
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(rails git ruby)
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.nodebrew/current/lib/node_modules:$PATH
-export PATH=$HOME/.emsdk/emscripten/1.34.1:$PATH
-
 
 alias emacs="$(brew --prefix emacs)/bin/emacs"
-alias em="$(brew --prefix emacs)/bin/emacs"
-# alias ipython="$HOME/.pyenv/versions/2.7.8/bin/ipython"
 alias sub="/usr/local/bin/subl"
-alias unicorn="unicorn_rails -c config/unicorn.rb -p 3000 -E"
-# alias tr="tree -L 2"
-alias br="cd ~/Library/Application\ Support/Brackets/extensions/user"
 alias j="z"
 alias nd="nodemon --harmony"
 alias ga="git add ."
@@ -29,35 +20,22 @@ alias gyp="node-gyp rebuild"
 alias gfp="gp && git ftp push"
 alias ngrok="/usr/local/bin/ngrok"
 
-# export PATH="/usr/local/heroku/bin:$PATH"
-
-# alias julius="julius -C `brew --prefix julius-dictation-kit`/share/fast.jconf -charconv EUC-JP UTF-8"
-
-export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 export LDFLAGS="-L/usr/local/opt/zlib/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include"
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
 export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:$PATH"
-# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/
-# export PYTHONPATH=$HOME/.pyenv/versions/3.5.2/lib/python3.5/site-packages/
-
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+eval "$(rbenv init -)"
 
-eval `keychain --quiet --eval --agents ssh id_rsa`
-
-export DOCKER_CERT_PATH=/Users/ryosuzuki/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
+# eval `keychain --quiet --eval --agents ssh id_rsa`
 
 . `brew --prefix`/etc/profile.d/z.sh
 
+
 export C_INCLUDE_PATH="/usr/local/opt/armadillo/include"
 export CPLUS_INCLUDE_PATH="/usr/local/opt/armadillo/include"
-
 
 export PATH="$HOME/Documents/c++/depot_tools:$PATH"
 export CXX="`which clang++`"
@@ -73,13 +51,8 @@ export GYP_DEFINES="clang=1"
 export C_INCLUDE_PATH="/usr/local/include/"
 export CPLUS_INCLUDE_PATH="/usr/local/include/"
 
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-
-# source '/Users/ryosuzuki/.google-cloud-sdk/path.zsh.inc'
-# source '/Users/ryosuzuki/.google-cloud-sdk/completion.zsh.inc'
-export PATH="/usr/local/opt/opencv@2/bin:$PATH"
 export PATH="/usr/local/opt/opencv@2/bin:$PATH"
 export PATH="/usr/local/opt/opencv@3/bin:$PATH"
